@@ -1,10 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const jsxheading=(<h1 className="Vinyas">Namaste Javascript</h1>)
+const Title = () => {
+  return <h1 className="Vinyas">Namaste Javascript</h1>;
+};
 
-console.log(jsxheading);
+const HeadingCompnents = () => (
+  <div id="container">
+    <Title/>
+    <h1>Javascript Functional Components</h1>
+  </div>
+)
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const root=ReactDOM.createRoot(document.getElementById('root'))
-
-root.render(jsxheading);
+root.render(<HeadingCompnents />);
